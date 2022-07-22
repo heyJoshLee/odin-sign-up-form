@@ -7,7 +7,63 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>Sign-up Form</h1>
-    
+    <div id="page-wrapper">
+        <div id="side-bar">
+            <div id="logo-container">
+                <img src="./images/odin-logo.png" alt="The Odin Project Logo">
+                <p id="odin-logo-text">odin</p>
+            </div>
+        </div>
+        <div id="main">
+            <div id="hero">
+                <h1>This is not a real online service!</h1>
+                <h2>You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. </h2>
+                    <h2>You <em>know</em> you want to.</h2>
+            </div>
+            <div id="form-section">
+                <form action="/" method="post">
+                    <div id="form-input-section">
+                        <h3>Let's do this!</h3>
+                        <div class="form-row">
+                            <div class="input-item">
+                                <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="input-item">
+                                <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-item">
+                                <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="input-item">
+                                <label for="phoneNumber">Phone Number</label>
+                                    <input type="text" id="phoneNumber" name="phoneNumber" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-item">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                            <div class="input-item">
+                                <label for="password">Password</label>
+                                <input type="passwordConfirmation" id="passwordConfirmation" name="passwordConfirmation" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="form-submit-section">
+                        <button type="submit">Create Account</button>
+                    </div>
+                </form>
+                <div id="call-to-action-section">
+                    <p class="call-to-action-text">Already have an account? <a href="#">Log in</a></span></p>
+                </div>
+            </div>
+        </div>
+    </div>    
 </body>
 </html>

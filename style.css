@@ -94,7 +94,7 @@ input:not([type="submit"]) {
 }
 
 input:focus {
-    border-color: var(--odin-green);
+    outline-color: rgb(0, 149, 198);
 }
 
 label {
@@ -114,6 +114,7 @@ a {
 .form-row {
     display: flex;
     justify-content: space-between;
+    max-width: 800px;
 }
 
 .input-item {
@@ -146,3 +147,18 @@ a {
 button:hover {
     cursor: pointer;
 }
+
+.invalid-input {
+    border: 1px solid red !important;
+}
+
+#password-confirmation-text {
+    margin-top: -15px;
+    color: red;
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+

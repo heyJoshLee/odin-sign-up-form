@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Odin Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="page-wrapper">
@@ -27,11 +27,11 @@
                         <div class="form-row">
                             <div class="input-item">
                                 <label for="firstName">First Name</label>
-                                    <input type="text" id="firstName" name="firstName" required>
+                                    <input type="text" id="firstName" name="firstName" maxlength="20" required>
                             </div>
                             <div class="input-item">
                                 <label for="lastName">Last Name</label>
-                                    <input type="text" id="lastName" name="lastName" required>
+                                    <input type="text" id="lastName" name="lastName" maxlength="20" required>
                             </div>
                         </div>
                         <div class="form-row">
@@ -47,11 +47,12 @@
                         <div class="form-row">
                             <div class="input-item">
                                 <label for="password">Password</label>
-                                <input type="password" id="password" name="password" required>
+                                <input type="password" id="password" name="password" minlength="6" maxlength="20" required>
                             </div>
                             <div class="input-item">
-                                <label for="password">Password</label>
-                                <input type="passwordConfirmation" id="passwordConfirmation" name="passwordConfirmation" required>
+                                <label for="password">Password Confirmation</label>
+                                <input type="password" id="passwordConfirmation" name="passwordConfirmation" minlength="6" maxlength="20" required>
+                                <p id="password-confirmation-text" class="hidden" >Passwords do not match.</p>
                             </div>
                         </div>
                     </div>
